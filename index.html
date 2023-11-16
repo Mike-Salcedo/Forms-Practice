@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Rescue Adoption Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header-section">
+      <h1 class="pet-adoption-form-h1">Pet Rescue Adoption Form</h1>
+      <p>Want to adopt a new family member? Fill out the form below:</p>
+    </div>
+    <div class="main-section">
+      <form action="" method="get" class="adoption-form">
+        <div class="form-row">
+          <label for="full-name">Name:</label>
+          <input id="full-name" name="full-name" type="text" />
+        </div>
+        <div class="form-row">
+          <label for="email-address">Email:</label>
+          <input id="email-address" name="email-address" type="email" />
+        </div>
+        <div class="form-row">
+          <label for="phone-number">Phone number:</label>
+          <input id="phone-number" name="phone-number" type="tel" />
+        </div>
+        <div class="form-row">
+          <fieldset class="address-section-fieldset">
+            <legend class="address-section-legend">Your Address</legend>
+            <div class="form-row-address-section">
+              <label for="street-address">Street Address:</label>
+              <input
+                id="street-address"
+                name="street-address"
+                type="text"
+                placeholder="Street Address"
+              />
+            </div>
+            <div class="form-row-address-section">
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" placeholder="City" />
+            </div>
+            <div class="form-row-address-section">
+              <label for="region">Region:</label>
+              <input
+                id="region"
+                name="region"
+                type="text"
+                placeholder="Region"
+              />
+            </div>
+            <div class="form-row-address-section">
+              <label for="zip-code">Zip Code:</label>
+              <input
+                id="zip-code"
+                name="zip-code"
+                type="text"
+                placeholder="Zip Code"
+              />
+            </div>
+            <div class="form-row-address-section">
+              <label for="country">Country</label>
+              <div class="select-wrapper">
+                <select name="country" id="country">
+                  <option value="" hidden>Select your country</option>
+                  <option value="afghanistan">Afghanistan</option>
+                  <option value="albania">Albania</option>
+                  <option value="algeria">Algeria</option>
+                  <option value="a">Andorra</option>
+                  <option value="angola">Angola</option>
+                  <option value="antigua-and-barbuda">
+                    Antigua and Barbuda
+                  </option>
+                  <option value="argentina">Argentina</option>
+                  <option value="armenia">Armenia</option>
+                  <option value="australia">Australia</option>
+                  <option value="austria">Austria</option>
+                  <option value="azerbaijan">Azerbaijan</option>
+                  <option value="the_bahamas">The-Bahamas</option>
+                  <option value="bahrain">Bahrain</option>
+                  <option value="bangladesh">Bangladesh</option>
+                  <option value="barbados">Barbados</option>
+                  <option value="belarus">Belarus</option>
+                  <option value="belgium">Belgium</option>
+                  <option value="belize">Belize</option>
+                  <option value="benin">Benin</option>
+                  <option value="bhutan">Bhutan</option>
+                  <option value="bolivia">Bolivia</option>
+                  <option value="bosnia-and-herzegovina">
+                    Bosnia and Herzegovina
+                  </option>
+                  <option value="botswana">Botswana</option>
+                  <option value="brazil">Brazil</option>
+                  <option value="brunei">Brunei</option>
+                  <option value="bulgaria">Bulgaria</option>
+                  <option value="burkina_faso">Burkina Faso</option>
+                  <option value="burundi">Burundi</option>
+                </select>
+                <span class="custom-arrow"></span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-row">
+          <fieldset class="pet-selection">
+            <legend>Type of pet:</legend>
+
+            <div>
+              <input id="cat" name="pet_type" value="cat" type="radio" />
+              <label for="cat">Cat </label>
+            </div>
+            <div>
+              <input id="dog" name="pet_type" value="dog" type="radio" />
+              <label for="dog">Dog </label>
+            </div>
+            <div>
+              <input
+                id="hamster"
+                name="pet_type"
+                value="hamster"
+                type="radio"
+              />
+              <label for="hamster">Hamster </label>
+            </div>
+            <div>
+              <input id="snake" name="pet_type" value="snake" type="radio" />
+              <label for="snake">Snake </label>
+            </div>
+            <div>
+              <input id="turtle" name="pet_type" value="turtle" type="radio" />
+              <label for="turtle">Turtle </label>
+            </div>
+            <div>
+              <label for="other">Other:</label>
+              <textarea
+                id="other"
+                name="pet_type"
+                value="other"
+                type="text"
+              ></textarea>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
