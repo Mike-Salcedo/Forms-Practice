@@ -13,7 +13,7 @@ body {
   background-size: cover;
 
   font-family: "Exo 2", sans-serif, "Times New Roman", Times, serif;
-  font-size: 16px;
+  /* font-size: 16px;,- */
   line-height: 1.1;
 
   display: flex;
@@ -41,12 +41,57 @@ form {
   margin-bottom: 5%;
 }
 
+input[type="checkbox"] {
+  appearance: none;
+
+  position: relative;
+  width: 1.6em;
+  height: 1.6em;
+  border: 1px solid gray;
+
+  /* Adjusts the position of the checkboxes on the text baseline */
+
+  vertical-align: -2px;
+
+  color: green;
+}
+
+input[type="checkbox"]::before {
+  content: "\1F43E";
+  position: absolute;
+  font-size: 1.2em;
+  right: -1px;
+  top: -0.2em;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked::before {
+  /* Use `visibility` instead of `display` to avoid recalculating layout */
+
+  visibility: visible;
+}
+
+input[type="checkbox"]:disabled {
+  border-color: black;
+  background: #ddd;
+  color: gray;
+}
+
+.form-row .checkbox-label {
+  margin: 10px;
+  width: 30%;
+  font-size: 1rem;
+  font-weight: 600;
+
+  border-radius: 5%;
+}
+
 .select-wrapper {
   position: relative;
 }
 
 .select-wrapper::after {
-  content: "🐾";
+  content: "\1F43E";
 
   font-size: 1.5rem;
   top: -8px;
@@ -76,13 +121,11 @@ form {
 
 .main-section {
   width: 80%;
-  /* margin-bottom: 10%; */
 }
 
 .adoption-form {
   background-color: rgba(255, 255, 255, 0.9);
 
-  /* change this to another color later */
   border: 3px solid #d6d9dc;
   border-radius: 3px;
 
@@ -96,13 +139,13 @@ form {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  /* gap: 10px; */
 }
 
 .form-row input[type="text"],
 .form-row input[type="email"],
 .form-row input[type="tel"],
-.form-row > input[type="radio"] {
+.form-row > input[type="radio"],
+button {
   background-color: #ffffff;
   border: 1px solid #d6d9dc;
   border-radius: 10px;
@@ -147,4 +190,36 @@ textarea {
   padding: 7px;
   font-size: 1rem;
   resize: none;
+}
+
+.form-row.button {
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  appearance: none;
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border-radius: 10px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+
+  width: 50%;
+  height: 50px;
+
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #76aeed;
+}
+
+button:active {
+  background-color: #407fc7;
 }
