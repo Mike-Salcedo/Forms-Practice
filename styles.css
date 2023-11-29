@@ -177,13 +177,10 @@ button {
   flex-shrink: 0;
 }
 
-input[type="email"]:invalid,
-input[type="text"]:invalid {
+input[name="zip-code"]:invalid {
   border-color: #d55c5f;
   color: #d55c5f;
 }
-
-
 
 fieldset.address-section-fieldset,
 fieldset.pet-selection {
