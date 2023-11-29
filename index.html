@@ -13,7 +13,9 @@
     </div>
     <div class="main-section">
       <form action="" method="get" class="adoption-form">
-        <p>Required fields have an asterisk <span aria-label="required">*</span></p>
+        <p>
+          Required fields have an asterisk <span aria-label="required">*</span>
+        </p>
         <div class="form-row">
           <label for="full-name"
             >Name: <span aria-label="required">*</span></label
@@ -64,6 +66,7 @@
                 name="zip-code"
                 type="text"
                 placeholder="Zip Code"
+                pattern="(\d{5}([\-]\d{4})?)"
               />
             </div>
             <div class="form-row-address-section">
